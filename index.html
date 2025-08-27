@@ -7,20 +7,64 @@
     <title>WEDE5020POE</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <!-- using bootstrap cdn styling to neatly arrange our html -->
+    <!-- this allows for the website to be easily screen responsive by using flex grid rows and column -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to WEDE5020POE</h1>
-    </header>
 
-    <main>
-        <p>This is your starting HTML boilerplate.</p>
-    </main>
+        <div class="container">
 
-    <footer>
-        <p>&copy; Ben Norton - WEDE5020 POE 2025 </p>
-    </footer>
+            <div class="row mt-2">
+                <div class="col-12">
+                    <h1>Cape Town Surf Spot Hub</h1>
+                    <p>This website aims to centralise all the surf spots in cape town.</p>
+                </div>
+            </div>
 
+            <div class="row mt-4">
+                <div class="col-12 col-lg-4">
+                    <img src="" alt="Dungoens">
+                    <p>Add your favorite surf spots</p>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <img src="" alt="Llandudno">
+                    <p>Leave a comment and rating for each spot</p>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <img src="" alt="Muizenberg">
+                    <p>Save your favorite sessions</p>
+                </div>
+            </div>
+
+
+            <div class="row mt-4">
+                <h3>Dashboard</h3>
+                <div class="col-12 col-lg-4">
+                    <div class="card p-3">
+                        <p>Add spots to show on dashboard</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card p-3">
+                        <p>Add spots to show on dashboard</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card p-3">
+                        <p>Add spots to show on dashboard</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="position: absolute; bottom: 0;">
+                <footer>
+                    <p>&copy; Ben Norton - WEDE5020 POE 2025 </p>
+                </footer>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
