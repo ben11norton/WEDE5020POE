@@ -7,7 +7,7 @@
 
 ## POE_Part2
 ### Video Demonstration
-[Click here to watch my Part 2 demo video](video/POE_Part2_Demo.mp4)
+[Click here to watch my Part 2 demo video](images/POE_Part2_Demo.mp4)
 
 ### Home Page After Styling
 ![Home Page After Styling](images/POE_Part2_HomePageScreenshot.png)
