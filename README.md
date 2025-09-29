@@ -1,4 +1,5 @@
 # WEDE5020POE
+please view this ReadMe on my GitHub repository over at: https://github.com/ben11norton/WEDE5020POE/tree/master
 
 ## POE Part Progress:
 
