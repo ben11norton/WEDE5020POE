@@ -5,10 +5,18 @@
 ## POE_Part1:
 ![Home Page Before Styling POE_Part1](images/POE_Part1_HomePageScreenshot.png)
 
-## POE_Part2:
+## POE_Part2
+### Video Demonstration
+[Click here to watch my Part 2 demo video](video/POE_Part2_Demo.mp4)
+
+### Home Page After Styling
 ![Home Page After Styling](images/POE_Part2_HomePageScreenshot.png)
-![Home Page resposiveness: medium screen size](images/DashboardOnMediumScreens.png)
-![Home Page resposiveness: small screen size](images/DashboardOnSmallScreens.png)
+
+### Home Page Responsiveness: Medium Screen Size
+![Home Page responsiveness: medium screen size](images/DashboardOnMediumScreens.png)
+
+### Home Page Responsiveness: Small Screen Size
+![Home Page responsiveness: small screen size](images/DashboardOnSmallScreens.png)
 
 ## Design Features: Styling set up in my style.css
 - the main theme for this project was is to have a sleek user friendly interface
@@ -27,6 +35,10 @@
 - I can then access different screen size class by using col-<screen-size>-<col-size>. For example, if I want my 3 large screen column 4 cards to span the whole width of the screen then I use col-lg-4 for each of the 3 cards. Then when the screen reduces in size I only want 2 to show side by side I can then use col-md-6 which will make the first 2 cards fill up half the screen width on medium size screens and then third card shown below. 
 - If the screen then shrinks further to a small size phone, then I can access col-12 the default column, which will then stack each card on top of each other within that row as shown in Figure * Home Page resposiveness: small screen size
 
+
+## Other styling decisions:
+- In addition to my main css styling and boostrap resposiveness I added fontawesome icons to make the sidebar pop more
+- Alongside this, I also emplyed Googl Fonts font family Popoins to make the overall look and feel of the website more polished
 
 ## Changelog:
 8e84724 new styled sidebar navigation and transferring other page styling across
