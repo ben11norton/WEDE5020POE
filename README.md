@@ -41,6 +41,7 @@
 - Alongside this, I also emplyed Googl Fonts font family Popoins to make the overall look and feel of the website more polished
 
 ## Changelog:
+67a3f63 added demo video showcasing screen resposiveness and styling of pages to be viewed on git hub
 355d318 finalising set up for different screens
 bcc7873 update readme for font awesome icons and google fonts + demo video link
 f402887 readme headings
