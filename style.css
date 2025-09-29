@@ -16,14 +16,54 @@ body{
 }
 
 .glassmorphismSideBarCard {
-    padding:15px;
+    position: relative;
+    padding: 15px;
     margin-bottom: 10px;
-    border-radius:20px;
-    background:rgba(255,255,255,0.15);
-    backdrop-filter:blur(1.5px);
-    -webkit-backdrop-filter:blur(1.5px);
-    border: 3px solid rgba(255,255,255,0.2);
-    box-shadow:0 4px 30px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.glassmorphismSideBarCard:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.6s ease;
+}
+
+.glassmorphismSideBarCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.glassmorphismSideBarCard:hover::before {
+    animation: shimmer 2s infinite;
+    opacity: 1;
+}
+
+@keyframes shimmer {
+    0% {
+        left: -75%;
+    }
+    100% {
+        left: 125%;
+    }
 }
 
 .dashboardImage {
