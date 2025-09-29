@@ -2,10 +2,10 @@
 
 ## POE Part Progress:
 
-##POE_Part1:
+## POE_Part1:
 ![Home Page Before Styling POE_Part1](images/POE_Part1_HomePageScreenshot.png)
 
-##POE_Part2:
+## POE_Part2:
 ![Home Page After Styling](images/POE_Part2_HomePageScreenshot.png)
 ![Home Page resposiveness: medium screen size](images/DashboardOnMediumScreens.png)
 ![Home Page resposiveness: small screen size](images/DashboardOnSmallScreens.png)
@@ -14,7 +14,7 @@
 - the main theme for this project was is to have a sleek user friendly interface
 - for this I chose a glassmorphism theme which gives a modern look to the website without distracting the user from the main functionality
 - I employed this theme using my css classes named glassmorphismCard and glassmorphismSideBarCard
-- alongside the glassmorphismSideBarCard class for my side bar I used css psudo elements such as :hover and ::before to allow me to add some basic stling animations in order to capture more attention from the user towards the side bar
+- alongside the glassmorphismSideBarCard class for my side bar I used css psudo elements such as :hover and ::before to allow me to add some basic styling animations in order to capture more attention from the user towards the side bar
 - alongside the glassmorphism style I then used a liner gradient grey background to finsish off the modern look and feel of the website
 
 ## Choices for screen resposiveness:
