@@ -1,10 +1,14 @@
 # WEDE5020POE
 
-![Home Page Before Styling](images/POE_Part1_HomePageScreenshot.png)
+## POE Part Progress:
 
+##POE_Part1:
+![Home Page Before Styling POE_Part1](images/POE_Part1_HomePageScreenshot.png)
+
+##POE_Part2:
 ![Home Page After Styling](images/POE_Part2_HomePageScreenshot.png)
 ![Home Page resposiveness: medium screen size](images/DashboardOnMediumScreens.png)
-![Home Page resposiveness: medium screen size](images/DashboardOnSmallScreens.png)
+![Home Page resposiveness: small screen size](images/DashboardOnSmallScreens.png)
 
 ## Design Features: Styling set up in my style.css
 - the main theme for this project was is to have a sleek user friendly interface
@@ -13,6 +17,15 @@
 - alongside the glassmorphismSideBarCard class for my side bar I used css psudo elements such as :hover and ::before to allow me to add some basic stling animations in order to capture more attention from the user towards the side bar
 - alongside the glassmorphism style I then used a liner gradient grey background to finsish off the modern look and feel of the website
 
+## Choices for screen resposiveness:
+- In order to cater for different screen sizes I used bootstrap.css
+- This css/js bundle package allows me to leverage the grid system using rows and columns
+- For example, if I want to have a card block that fills the whole width of the screen then I would place col-12 inside of a row 
+- If I wanted 2 card blocks side by side then I can use two col-6 classes inside a row
+- The number of columns per row just needs to add up to 12 in total to span the whole width of the screen and you can then organise html in this grid format
+- This is especically useful once the screen size starts changing as if I have 3 cards side by side on a large screen with col-4 each 
+- I can then access different screen size class by using col-<screen-size>-<col-size>. For example, if I want my 3 large screen column 4 cards to span the whole width of the screen then I use col-lg-4 for each of the 3 cards. Then when the screen reduces in size I only want 2 to show side by side I can then use col-md-6 which will make the first 2 cards fill up half the screen width on medium size screens and then third card shown below. 
+- If the screen then shrinks further to a small size phone, then I can access col-12 the default column, which will then stack each card on top of each other within that row as shown in Figure * Home Page resposiveness: small screen size
 
 
 ## Changelog:
