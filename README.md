@@ -41,6 +41,11 @@
 - Alongside this, I also emplyed Googl Fonts font family Popoins to make the overall look and feel of the website more polished
 
 ## Changelog:
+355d318 finalising set up for different screens
+bcc7873 update readme for font awesome icons and google fonts + demo video link
+f402887 readme headings
+3eea256 update readme to explain use of boostrap.css
+4251fc9 update readme for poe part 2 styling and screen resposiveness
 8e84724 new styled sidebar navigation and transferring other page styling across
 54c1627 styling sidebar and adding in font awesome for side bar
 c7aeb70 add styling and bottom footer class for footer
