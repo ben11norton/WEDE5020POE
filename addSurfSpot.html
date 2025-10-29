@@ -64,17 +64,18 @@
 
                         <div class="row mt-4">
                             <div class="col-12 col-lg-4 pb-3 pb-lg-0">
-                                <div class="card p-3">
-                                    <p>Add your first surf spot</p>
+                                <div onclick="showAddSurfSpotModal(this)" class="card p-3" style="display: flex; flex-direction: row; cursor: pointer;">
+                                    <i class="fas fa-plus-circle" style="color: #9C9C9C; margin-right: 5px;"></i>
+                                    <p style="margin: -4px; margin-left: 10px;">Add your first surf spot</p>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 pb-3 pb-lg-0">
-                                <div class="card p-3">
+                                <div onclick="showAddSurfSpotModal(this)" class="card p-3" style="display: flex; flex-direction: row; cursor: pointer;">
                                     <i class="fas fa-plus-circle" style="color: #9C9C9C; margin-right: 5px;"></i>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 pb-3 pb-lg-0">
-                                <div class="card p-3">
+                                <div onclick="showAddSurfSpotModal(this)" class="card p-3" style="display: flex; flex-direction: row; cursor: pointer;">
                                     <i class="fas fa-plus-circle" style="color: #9C9C9C; margin-right: 5px;"></i>
                                 </div>
                             </div>
@@ -86,10 +87,109 @@
         </div>
 
 
+        <!-- this is our hidden boiler plate surf sport card that will be added to the row above -->
+        <div id="addSurfSpotCardDetailsHidden" style="display: none; flex-direction: column; cursor: pointer;">
+
+            <div class="row mb-2 align-items-center">
+                <div class="col-12">
+                    <div>Surf Spot Name:</div>
+                    <span class="spotNameCardDetails" style="color: #3fcc96;"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2 align-items-center">
+                <div class="col-12">
+                    <div>Location:</div>
+                    <span class="spotLocationCardDetails"style="color: #3fcc96;"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2 align-items-center">
+                <div class="col-12">
+                    <div>Wave Type:</div>
+                    <span class="waveTypeCardDetails"style="color: #3fcc96;"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2 align-items-center">
+                <div class="col-12">
+                    <div>Difficulty Level:</div>
+                    <span class="difficultyCardDetails"style="color: #3fcc96;"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2 align-items-center">
+                <div class="col-12">
+                    <div>Description:</div>
+                    <span class="descriptionCardDetails"style="color: #3fcc96;"></span>
+                </div>
+            </div>
+        </div>
+
         <div class="bottomFooter">
             <footer>
                 <p>&copy; Ben Norton - WEDE5020 POE 2025</p>
             </footer>
+        </div>
+
+
+        <!-- Add Surf Spot Modal -->
+        <div class="modal fade" id="addSurfSpotModal" tabindex="-1" aria-labelledby="addSurfSpotModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="padding: 20px; background: linear-gradient(to bottom, #f9f9f9, #888888);">
+
+                <div class="glassmorphismCard" >
+
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="addSurfSpotModalLabel">Add New Surf Spot</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                    <form id="addSurfSpotForm">
+                        <div class="mb-3">
+                            <label for="spotName" class="form-label">Surf Spot Name</label>
+                            <input type="text" class="form-control" id="spotName" placeholder="e.g., Muizenberg Beach" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="spotLocation" class="form-label">Location</label>
+                            <input type="text" class="form-control" id="spotLocation" placeholder="e.g., Cape Town, South Africa" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="waveType" class="form-label">Wave Type</label>
+                            <select id="waveType" class="form-select" required>
+                                <option value="">Select wave size</option>
+                                <option value="small">Small Waves</option>
+                                <option value="medium">Medium Waves</option>
+                                <option value="large">Big Waves</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="difficulty" class="form-label">Difficulty Level</label>
+                            <select id="difficulty" class="form-select">
+                                <option value="">Select difficulty</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea id="description" class="form-control" rows="3" placeholder="Describe this surf spot..."></textarea>
+                        </div>
+
+                        <button onclick="addNewSurfSpot(this)" type="button" class="btn btn-primary w-100">Add Surf Spot</button>
+                    </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
         </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
