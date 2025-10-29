@@ -91,17 +91,17 @@
                         <div class="row mt-4">
                             <h3>Dashboard</h3>
                             <div class="col-12 col-lg-4 pb-3 pb-lg-0">
-                                <div class="card p-3">
+                                <div id="surfSpot1" class="card p-3">
                                     <p>Add spots to show on dashboard</p>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 pb-3 pb-lg-0">
-                                <div class="card p-3">
+                                <div id="surfSpot2" class="card p-3">
                                     <p>Add spots to show on dashboard</p>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 pb-3 pb-lg-0">
-                                <div class="card p-3">
+                                <div id="surfSpot3" class="card p-3">
                                     <p>Add spots to show on dashboard</p>
                                 </div>
                             </div>
@@ -112,6 +112,44 @@
 
         </div>
 
+        <!-- this is our hidden boiler plate surf sport card that will be added to the row above -->
+        <div id="addSurfSpotCardDetailsHidden" style="display: none; flex-direction: column; cursor: pointer;">
+
+            <div class="row mb-2 align-items-center">
+                <div class="col-12">
+                    <div>Surf Spot Name:</div>
+                    <span class="spotNameCardDetails" style="color: #3fcc96;"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2 align-items-center">
+                <div class="col-12">
+                    <div>Location:</div>
+                    <span class="spotLocationCardDetails"style="color: #3fcc96;"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2 align-items-center">
+                <div class="col-12">
+                    <div>Wave Type:</div>
+                    <span class="waveTypeCardDetails"style="color: #3fcc96;"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2 align-items-center">
+                <div class="col-12">
+                    <div>Difficulty Level:</div>
+                    <span class="difficultyCardDetails"style="color: #3fcc96;"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2 align-items-center">
+                <div class="col-12">
+                    <div>Description:</div>
+                    <span class="descriptionCardDetails"style="color: #3fcc96;"></span>
+                </div>
+            </div>
+        </div>
 
         <div class="bottomFooter">
             <footer>
