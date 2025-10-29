@@ -1,3 +1,11 @@
+// SECTION FOR index.html
+let storedSurfSpotsForDashboard = JSON.parse(localStorage.getItem('currentSurfSpot')) || [];
+debugger;
+
+
+
+
+// SECTION FOR addSurfSpot.html
 // keeping track of our modal globally here to hide and show
 let addSurfSpotModalInstance;
 
@@ -5,6 +13,8 @@ let addSurfSpotModalInstance;
 // we will use our input and select id's and store them as key value pairs
 // using the id as the key and the input.value as the value in our addNewSurfSpot function
 var surfSpotDetails = {};
+// and we will then add them to an array which we can then cache to display the details on our dashboard
+let surfSpotDetailsArray = [];
 
 // and we will also store which add spot card we clicked on
 // so we can populate the correct card with the information
@@ -37,9 +47,18 @@ function addNewSurfSpot(addSurfSpotButton){
         // store our key value pair in out global object to then use to show this information on the page
         surfSpotDetails[inputId] = inputValue;
 
+
         // then we clear our inputfields ready for the next surf spot to be added
         inputField.value = '';
     }
+
+    // here we now need to store our details in our global array to cache
+    // so we store a copy we can add to our global array:
+    var surfSpotDetailsToStore = { ...surfSpotDetails };
+    surfSpotDetailsArray.push(surfSpotDetailsToStore);
+
+    // and store to our local storage cache to show on the dashbaord
+    localStorage.setItem('currentSurfSpot', JSON.stringify(surfSpotDetailsArray));
 
     // display our infomation in our card
     showNewSurfSpotInfo();
