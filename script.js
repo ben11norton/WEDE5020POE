@@ -1,8 +1,48 @@
 // SECTION FOR index.html
-let storedSurfSpotsForDashboard = JSON.parse(localStorage.getItem('currentSurfSpot')) || [];
-debugger;
+// functions we call on our page load
 
 
+// here we need to check which page we are on when our script reloads after navigating to a new page
+let activePageName;
+// so we can add a div with an id on each page to tell us which page we are on
+checkActivePage();
+function checkActivePage(){
+    var activePageDiv = document.querySelector('.activePageTag');
+    activePageName = activePageDiv.id;
+}
+
+// now we know what page we are on we can activate different functions accordingly
+triggerActivePageFunctions();
+function triggerActivePageFunctions(){
+
+    switch (activePageName) {
+        case "dashboardPage":
+            checkAndDisplaySurfSpots();
+            break;
+        case "addSurfSpotPage":
+            break;
+        case "personalPage":
+            break;
+        case "exploreSurfSpotsPage":
+            break;
+        case "aboutPage":
+            break;
+        default:
+            break;
+    }
+}
+
+function checkAndDisplaySurfSpots(){
+    debugger;
+    let storedSurfSpotsForDashboard = JSON.parse(localStorage.getItem('currentSurfSpot')) || [];
+    // get our cached surf spots from our addSurfSpot page
+
+    // then we can loop through each of our stored suf spot details
+    // to display on our surf spot dashboard section
+    for(let i = 0; i < storedSurfSpotsForDashboard.length; i++){
+
+    }
+}
 
 
 // SECTION FOR addSurfSpot.html
