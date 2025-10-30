@@ -36,8 +36,12 @@ function triggerActivePageFunctions(){
 }
 
 function checkAndDisplaySurfSpots(){
-    let storedSurfSpotsForDashboard = JSON.parse(localStorage.getItem('surfSpotDetailsLocalStorageArray')) || [];
-    console.log(storedSurfSpotsForDashboard);
+    let storedString = localStorage.getItem('surfSpotDetailsLocalStorageArray');
+    let storedSurfSpotsForDashboard = [];
+
+    if (storedString && storedString !== "undefined") {
+        storedSurfSpotsForDashboard = JSON.parse(storedString);
+    }
     // get our cached surf spots from our addSurfSpot page
 
     // then we can loop through each of our stored suf spot details
@@ -212,7 +216,7 @@ function populateEditSurfSpotModal(surfSpotDetailsToPopulateModal){
 
 function deleteSurfSpot(deleteSpotBtn){
     // first we clear our surf spot card and return it to its original content
-    var newSurfSpotCard = editSpotBtn.parentNode.parentNode;
+    var newSurfSpotCard = deleteSpotBtn.parentNode.parentNode;
     var restoreSurfSpotContents = document.getElementById('restoreSurfSpotContents');
     var contentsToRestore = restoreSurfSpotContents.innerHTML;
     newSurfSpotCard.innerHTML = contentsToRestore;
@@ -222,7 +226,6 @@ function deleteSurfSpot(deleteSpotBtn){
     var surfDetailsKey = parseInt(surfSpotDetailsId.split('surfSpot')[1]);
 
     // now we have our key we can clear our storage
-    localStorage.setItem('surfSpotDetailsLocalStorageArray', JSON.stringify(surfSpotDetailsArray));
     var surfSpotDetailsArray = JSON.parse(localStorage.getItem('surfSpotDetailsLocalStorageArray')) || [];
 
     // so we can loop through the stroed array
@@ -238,6 +241,9 @@ function deleteSurfSpot(deleteSpotBtn){
 
     // save the updated array back to localStorage
     localStorage.setItem('surfSpotDetailsLocalStorageArray', JSON.stringify(surfSpotDetailsArray));
+
+    // lasty we reload the page
+    window.location.reload();
 }
 
 function clearAllSurfSpots(){
