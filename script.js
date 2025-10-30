@@ -1,6 +1,6 @@
 // SECTION FOR index.html
 // functions we call on our page load
-
+// localStorage.removeItem('surfSpotDetailsLocalStorageArray');
 
 // global variables 
 let surfSpotCardToFillIn;
@@ -37,7 +37,7 @@ function triggerActivePageFunctions(){
 }
 
 function checkAndDisplaySurfSpots(){
-    let storedSurfSpotsForDashboard = JSON.parse(localStorage.getItem('currentSurfSpot')) || [];
+    let storedSurfSpotsForDashboard = JSON.parse(localStorage.getItem('surfSpotDetailsLocalStorageArray')) || [];
     // get our cached surf spots from our addSurfSpot page
 
     // then we can loop through each of our stored suf spot details
@@ -104,12 +104,18 @@ function addNewSurfSpot(addSurfSpotButton){
     }
 
     // here we now need to store our details in our global array to cache
-    // so we store a copy we can add to our global array:
-    var surfSpotDetailsToStore = { ...surfSpotDetails };
+    // so we store a copy we can add to our global array, alongside an id key we can use to then access later:
+    var surfSpotDetailsId = surfSpotDetailsArray.length + 1
+    var surfSpotDetailsToStore = { 
+        id: surfSpotDetailsId,
+        ...surfSpotDetails
+    };
+
+    // push into the array
     surfSpotDetailsArray.push(surfSpotDetailsToStore);
 
-    // and store to our local storage cache to show on the dashbaord
-    localStorage.setItem('currentSurfSpot', JSON.stringify(surfSpotDetailsArray));
+    // and store to our local storage cache to show on the dashboard
+    localStorage.setItem('surfSpotDetailsLocalStorageArray', JSON.stringify(surfSpotDetailsArray));
 
     // display our infomation in our card
     showNewSurfSpotInfo(surfSpotDetails);
