@@ -38,6 +38,7 @@ function triggerActivePageFunctions(){
 
 function checkAndDisplaySurfSpots(){
     let storedSurfSpotsForDashboard = JSON.parse(localStorage.getItem('surfSpotDetailsLocalStorageArray')) || [];
+    console.log(storedSurfSpotsForDashboard);
     // get our cached surf spots from our addSurfSpot page
 
     // then we can loop through each of our stored suf spot details
@@ -104,15 +105,16 @@ function addNewSurfSpot(addSurfSpotButton){
     }
 
     // here we now need to store our details in our global array to cache
-    // so we store a copy we can add to our global array, alongside an id key we can use to then access later:
-    var surfSpotDetailsId = surfSpotDetailsArray.length + 1
-    var surfSpotDetailsToStore = { 
+    // so we can add to our global array, alongside an id key we can use to then access later:
+    var surfSpotDetailsId = surfSpotDetailsArray.length + 1;
+    var surfSpotDetailsToStore = {
         id: surfSpotDetailsId,
-        ...surfSpotDetails
+        surfSpotDetails: surfSpotDetails
     };
 
     // push into the array
     surfSpotDetailsArray.push(surfSpotDetailsToStore);
+    debugger;
 
     // and store to our local storage cache to show on the dashboard
     localStorage.setItem('surfSpotDetailsLocalStorageArray', JSON.stringify(surfSpotDetailsArray));
@@ -159,6 +161,54 @@ function showNewSurfSpotInfo(surfSpotDetailsObject){
     newSurfSpotCardDetails.style.display = 'flex';
     // and remove it's hidden id so next surf spot added doesn't get muddled up
     newSurfSpotCardDetails.id = '';
+}
+
+
+function editSurfSpot(editSpotBtn){
+    //  open our surf spot modal
+    var newSurfSpotCard = editSpotBtn.parentNode.parentNode;
+    showAddSurfSpotModal(newSurfSpotCard)
+
+    // then we grab our key to access the surf spot details array
+    var surfSpotDetailsId = newSurfSpotCard.id;
+    var surfDetailsKey = parseInt(surfSpotDetailsId.split('surfSpot')[1]);
+
+    let surfSpotDetailsToPopulateModal = {};
+    // using our key we can loop through our surfSpotDetailsArray
+    for(let i = 0; i < surfSpotDetailsArray.length; i++){
+        var surfSpotDetails = surfSpotDetailsArray[i];
+        // then grab our details using our matching key here
+        if(surfSpotDetails.id === surfDetailsKey){
+            surfSpotDetailsToPopulateModal = surfSpotDetails.surfSpotDetails;
+        }
+    }
+
+    // then we populate our modal 
+    populateEditSurfSpotModal(surfSpotDetailsToPopulateModal);
+}
+
+function populateEditSurfSpotModal(surfSpotDetailsToPopulateModal){
+    var addSurfSpotModal = document.getElementById('addSurfSpotModal');
+    // get all our inputs and selects
+    var surfSpotInputFields = addSurfSpotModal.querySelectorAll('input, select, textarea');
+
+    // loop throgh them
+    for(let i = 0; i < surfSpotInputFields.length; i++){
+        // grab their id's
+        var inputField = surfSpotInputFields[i];
+        var inputId = inputField.id;
+
+        // grab the corresponding surf details in our object
+        var matchingDetails = surfSpotDetailsToPopulateModal[inputId];
+
+        // then we pre-populate our form
+        inputField.value = matchingDetails ?? '';
+    }
+}
+
+
+
+function deleteSurfSpot(deleteSpotBtn){
 }
 
 
