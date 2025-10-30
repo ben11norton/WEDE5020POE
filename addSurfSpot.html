@@ -59,8 +59,13 @@
                     <div class="glassmorphismCard">
 
                         <div class="row mt-2">
-                            <div class="col-12">
+                            <div class="col-10">
                                 <h1>Add Surf Spot</h1>
+                            </div>
+                            <div class="col-2 text-center">
+                                <p style="color: red; cursor: pointer; margin: 0;" onclick="clearAllSurfSpots()">
+                                    <i class="fas fa-trash-alt"></i> Clear All Spots
+                                </p>
                             </div>
                         </div>
 
@@ -93,7 +98,7 @@
         <div id="addSurfSpotCardDetailsHidden" style="display: none; flex-direction: column; cursor: pointer;">
 
             <!-- icons for our edit and delete functionality -->
-            <i onclick="editSurfSpot(this)" class="fa-solid fa-pen" style="color: #3fcc96; margin-right: 5px; position: absolute; top: 15px; right: 30px;"></i>
+            <i onclick="editSurfSpot(this)" class="fa-solid fa-pen" style="color: #3fcc96; margin-right: 5px; position: absolute; top: 15px; right: 60px;"></i>
             <i onclick="deleteSurfSpot(this)" class="fa-solid fa-trash" style="color: red; margin-right: 5px; position: absolute; top: 15px; right: 10px;"></i>
 
             <div class="row mb-2 align-items-center">
@@ -130,6 +135,13 @@
                     <span class="descriptionCardDetails"style="color: #3fcc96;"></span>
                 </div>
             </div>
+        </div>
+
+
+        <!--hiden content to restore our fresh card when we delete a surf spot-->
+        <div id="restoreSurfSpotContents" style="display: none;">
+            <i class="fas fa-plus-circle" style="color: #9C9C9C; margin-right: 5px;"></i>
+            <p style="margin: -4px; margin-left: 10px;">Add your first surf spot</p>
         </div>
 
         <div class="bottomFooter">
