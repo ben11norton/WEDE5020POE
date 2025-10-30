@@ -155,7 +155,7 @@ function showNewSurfSpotInfo(surfSpotDetailsObject){
 
         // then using their class we can match up the values from our global object
         var newSurfSpotDetailKey = newSurfSpotDetail.className.split('CardDetails')[0];
-        var newSurfSpotDetailValue = surfSpotDetailsObject[newSurfSpotDetailKey];
+        var newSurfSpotDetailValue = surfSpotDetailsObject.surfSpotDetails[newSurfSpotDetailKey];
 
         // and we can set our value to the matching div
         newSurfSpotDetail.textContent= newSurfSpotDetailValue;
