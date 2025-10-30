@@ -1,6 +1,6 @@
 // SECTION FOR index.html
 // functions we call on our page load
-// localStorage.removeItem('surfSpotDetailsLocalStorageArray');
+localStorage.removeItem('surfSpotDetailsLocalStorageArray');
 
 // global variables 
 let surfSpotCardToFillIn;

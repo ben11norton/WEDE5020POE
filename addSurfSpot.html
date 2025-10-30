@@ -55,7 +55,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-9 col-lg-10" style="font-family: Poppins;">
+                <div class="col-12 col-md-9 col-lg-10" style="font-family: Poppins; ">
                     <div class="glassmorphismCard">
 
                         <div class="row mt-2">
@@ -66,18 +66,18 @@
 
                         <div class="row mt-4">
                             <div class="col-12 col-lg-4 pb-3 pb-lg-0">
-                                <div id="surfSpot1" onclick="showAddSurfSpotModal(this)" class="card p-3" style="display: flex; flex-direction: row; cursor: pointer;">
+                                <div id="surfSpot1" onclick="showAddSurfSpotModal(this)" class="card p-3" style="display: flex; flex-direction: row; cursor: pointer; position: relative;">
                                     <i class="fas fa-plus-circle" style="color: #9C9C9C; margin-right: 5px;"></i>
                                     <p style="margin: -4px; margin-left: 10px;">Add your first surf spot</p>
                                 </div>
                             </div>
-                            <div id="surfSpot2" class="col-12 col-lg-4 pb-3 pb-lg-0">
-                                <div onclick="showAddSurfSpotModal(this)" class="card p-3" style="display: flex; flex-direction: row; cursor: pointer;">
+                            <div  class="col-12 col-lg-4 pb-3 pb-lg-0">
+                                <div id="surfSpot2"onclick="showAddSurfSpotModal(this)" class="card p-3" style="display: flex; flex-direction: row; cursor: pointer;position: relative;">
                                     <i class="fas fa-plus-circle" style="color: #9C9C9C; margin-right: 5px;"></i>
                                 </div>
                             </div>
-                            <div id="surfSpot3" class="col-12 col-lg-4 pb-3 pb-lg-0">
-                                <div onclick="showAddSurfSpotModal(this)" class="card p-3" style="display: flex; flex-direction: row; cursor: pointer;">
+                            <div  class="col-12 col-lg-4 pb-3 pb-lg-0">
+                                <div id="surfSpot3" onclick="showAddSurfSpotModal(this)" class="card p-3" style="display: flex; flex-direction: row; cursor: pointer;position: relative;">
                                     <i class="fas fa-plus-circle" style="color: #9C9C9C; margin-right: 5px;"></i>
                                 </div>
                             </div>
@@ -91,6 +91,10 @@
 
         <!-- this is our hidden boiler plate surf sport card that will be added to the row above -->
         <div id="addSurfSpotCardDetailsHidden" style="display: none; flex-direction: column; cursor: pointer;">
+
+            <!-- icons for our edit and delete functionality -->
+            <i class="fa-solid fa-pen" style="color: #3fcc96; margin-right: 5px; position: absolute; top: 5px; right: 30px;"></i>
+            <i class="fa-solid fa-trash" style="color: red; margin-right: 5px; position: absolute; top: 5px; right: 10px;"></i>
 
             <div class="row mb-2 align-items-center">
                 <div class="col-12">
