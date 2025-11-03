@@ -1,10 +1,14 @@
 # WEDE5020POE
 please view this ReadMe on my GitHub repository over at: https://github.com/ben11norton/WEDE5020POE/tree/master
 
-## POE Part Progress:
+## POE Parts:
+### Part 1
+### Part 2
+### Part 3
 
 ## POE_Part1:
 ![Home Page Before Styling POE_Part1](images/POE_Part1_HomePageScreenshot.png)
+
 
 ## POE_Part2
 ### Video Demonstration
@@ -41,7 +45,7 @@ please view this ReadMe on my GitHub repository over at: https://github.com/ben1
 - In addition to my main css styling and boostrap resposiveness I added fontawesome icons to make the sidebar pop more
 - Alongside this, I also emplyed Googl Fonts font family Popoins to make the overall look and feel of the website more polished
 
-## Changelog:
+## Changelog for Part 2:
 67a3f63 added demo video showcasing screen resposiveness and styling of pages to be viewed on git hub
 355d318 finalising set up for different screens
 bcc7873 update readme for font awesome icons and google fonts + demo video link
@@ -66,3 +70,16 @@ b5bf96a Added our other html pages that are linked up for our sidebar to now wor
 545171c setting up home screen structure
 2e35726 setting up base html boilter plate for main html page
 a24c4ca Initial commit
+
+
+
+## POE_Part3 - JavaScript Functionality:
+
+### Create - Edit - Delete functionality 
+![Adding Surf Spots to Dashboard POE_Part3](images/POE_Part3/AddSurfSpotsToDashboard.mp4)
+
+![Editing Surf Spots Functionality POE_Part3](images/POE_Part3/editSurfSpotFunctionality.mp4)
+
+![Clearing and deleting Surf Spots Functionality POE_Part3](images/POE_Part3/clearSurfSpotsFunctionality.mp4)
+
+## Changelog for Part 3:

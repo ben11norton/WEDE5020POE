@@ -3,6 +3,7 @@
 
 // global variables 
 let surfSpotCardToFillIn;
+let surfSpotDetailsArray = [];
 
 // here we need to check which page we are on when our script reloads after navigating to a new page
 let activePageName;
@@ -41,9 +42,10 @@ function checkAndDisplaySurfSpots(){
 
     if (storedString && storedString !== "undefined") {
         storedSurfSpotsForDashboard = JSON.parse(storedString);
+        surfSpotDetailsArray = storedSurfSpotsForDashboard;
     }
-    // get our cached surf spots from our addSurfSpot page
 
+    // get our cached surf spots from our addSurfSpot page
     // then we can loop through each of our stored suf spot details
     // to display on our surf spot dashboard section or when we are reloading our addSurfSpotPage
     for(let i = 0; i < storedSurfSpotsForDashboard.length; i++){
@@ -64,12 +66,6 @@ function checkAndDisplaySurfSpots(){
 // keeping track of our modal globally here to hide and show
 let addSurfSpotModalInstance;
 
-// here we store our form data using a  global object
-// we will use our input and select id's and store them as key value pairs
-// using the id as the key and the input.value as the value in our addNewSurfSpot function
-var surfSpotDetails = {};
-// and we will then add them to an array which we can then cache to display the details on our dashboard
-let surfSpotDetailsArray = [];
 
 // and we will also store which add spot card we clicked on
 // so we can populate the correct card with the information
@@ -85,6 +81,14 @@ function showAddSurfSpotModal(newSurfSpotCard){
 }
 
 function addNewSurfSpot(addSurfSpotButton){
+    // here we store our form data 
+    // we will use our input and select id's and store them as key value pairs
+    // using the id as the key and the input.value as the value in our addNewSurfSpot function
+    var surfSpotDetails = {};
+    // and we will then add them to an array which we can then cache to display the details on our dashboard
+    // this array is now declared above so we can use our cached spots
+    // let surfSpotDetailsArray = [];
+
     const addSurfSpotModal = document.getElementById('addSurfSpotModal');
 
     // get all our inputs and selects
@@ -155,7 +159,14 @@ function showNewSurfSpotInfo(surfSpotDetailsObject){
 
         // then using their class we can match up the values from our global object
         var newSurfSpotDetailKey = newSurfSpotDetail.className.split('CardDetails')[0];
-        var newSurfSpotDetailValue = surfSpotDetailsObject.surfSpotDetails[newSurfSpotDetailKey];
+        let newSurfSpotDetailValue;
+ 
+        if(surfSpotDetailsObject.surfSpotDetails){
+            newSurfSpotDetailValue = surfSpotDetailsObject.surfSpotDetails[newSurfSpotDetailKey];
+
+        } else {
+            newSurfSpotDetailValue = surfSpotDetailsObject[newSurfSpotDetailKey];
+        }
 
         // and we can set our value to the matching div
         newSurfSpotDetail.textContent= newSurfSpotDetailValue;
@@ -163,6 +174,7 @@ function showNewSurfSpotInfo(surfSpotDetailsObject){
 
     // lastly we append this filled in card to our surfSpotCardToFillIn
     surfSpotCardToFillIn.appendChild(newSurfSpotCardDetails);
+    debugger;
 
     // and then we unhide our card
     newSurfSpotCardDetails.style.display = 'flex';
