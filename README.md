@@ -102,6 +102,35 @@ please view this ReadMe on my GitHub repository over at: https://github.com/ben1
 
 [Clearing and deleting Surf Spots Functionality POE_Part3](images/POE_Part3_Functionality/clearSurfSpotsFunctionality.mp4)
 
+
+## Part 3 — SEO & Functionality Enhancements
+
+### Dashboard (`index.html`)
+
+#### SEO Improvements
+- I added in descriptive `<title>` and `<meta description>` tags to increase and search visibility.
+- `<meta name="robots" content="index, follow">` were then included in my html page to allow search engines to index the page.
+- Alongside this, all of the images in the dashboard include accessible `alt` text for improved accessibility, coupled with the navigation icons being labeled for extra clarity.
+- Heading hierarchy was then added using the following HTML elements for order: `<h1>` followed by `<h2>`, etc.
+- Employing boostrap.css allowed for the website to be fully responsive for different screen sizes.
+
+#### Functional Enhancements
+- Using icons from fontawesome I enhanced sidebar navigation with clear icons and matching/corresponding text for better user experience.
+- Across all the html pages I standardized the use of google fonts, Bootstrap, and Font awesome to make the website more consistent visually.
+- Within my HTML pages and throughout my script.js I included comments, alongside structure improvements, to increase clarity and maintainability of my code.
+
+---
+
+### Add Surf Spot Page (`addSurfSpot.html`)
+
+#### SEO Improvements
+- I included descriptive `<title>` and `<meta description>` tags to better display my Add Surf Spot HTML page.
+- Alongside the title and meta description, I included `<meta name="robots" content="index, follow">`, which futher increase search engine based indexing for the website.
+- In terms of navigation and internal links, these were optimzed for better SEO flow.
+- I also applied semantic HTML structuring coupled with accessible form labels for screen readers.
+- Lastly, I ensured the page layout was also fully responsive to different screen sizes.
+
+
 ## Changelog for Part 3:
 - 09a422d added POE part 3 demo screen shot and video headers to readme
 - db2f9b1 update addSurfSpot modal screenshot header
