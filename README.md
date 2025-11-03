@@ -143,6 +143,12 @@ please view this ReadMe on my GitHub repository over at: https://github.com/ben1
 - In terms of styling, I employed bootstrap.css rows and cols techique and my custom `glassmorphismCard` class for styling consistency.
 
 ## Changelog for Part 3:
+- b877e70 Added description explaining the use of web3Forms for the contact form and submission validation
+- caed1bc Added email contact form functionality video demo to README
+- 56186c5 added contact email form
+- bd66e78 added SEO and SEO improvements description to README
+- cb9576b Added SEO features to dashboard and add surf spot pages
+- 49e392e Add CRUD demo vidoe and header
 - 09a422d added POE part 3 demo screen shot and video headers to readme
 - db2f9b1 update addSurfSpot modal screenshot header
 - 9c5d903 added addSurfSpotPage screenshot descriptions to readme
