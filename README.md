@@ -79,7 +79,7 @@ please view this ReadMe on my GitHub repository over at: https://github.com/ben1
 
 ![Add Surf Spot Page Functionality Description](images/POE_Part3_Functionality/AddSurfSpotPageDescription.png)
 
-![Add Surf Spot Page Functionality Description](images/POE_Part3_Functionality/AddSurfSpotModal.png)
+![Add Surf Spot Modal](images/POE_Part3_Functionality/AddSurfSpotModal.png)
 
 [Adding Surf Spots to Dashboard POE_Part3](images/POE_Part3_Functionality/AddSurfSpotsToDashboard.mp4)
 
