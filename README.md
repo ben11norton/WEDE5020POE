@@ -75,12 +75,14 @@ please view this ReadMe on my GitHub repository over at: https://github.com/ben1
 
 ## POE_Part3 - JavaScript Functionality:
 
-### Create - Edit - Delete functionality
-
+### Create - Edit - Delete (CRUD) functionality:
+#### Add Surf Spot Page Functionality Description
 ![Add Surf Spot Page Functionality Description](images/POE_Part3_Functionality/AddSurfSpotPageDescription.png)
 
+#### Add Surf Spot modal
 ![Add Surf Spot Modal](images/POE_Part3_Functionality/AddSurfSpotModal.png)
 
+#### CRUD Demo Video
 [Adding Surf Spots to Dashboard POE_Part3](images/POE_Part3_Functionality/AddSurfSpotsToDashboard.mp4)
 
 [Editing Surf Spots Functionality POE_Part3](images/POE_Part3_Functionality/editSurfSpotFunctionality.mp4)
