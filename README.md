@@ -82,14 +82,21 @@ please view this ReadMe on my GitHub repository over at: https://github.com/ben1
 #### Add Surf Spot modal
 ![Add Surf Spot Modal](images/POE_Part3_Functionality/AddSurfSpotModal.png)
 
-#### CRUD Demo Video
+### CRUD Demo Video
 [Adding Surf Spots to Dashboard POE_Part3](images/POE_Part3_Functionality/AddSurfSpotsToDashboard.mp4)
 
 [Editing Surf Spots Functionality POE_Part3](images/POE_Part3_Functionality/editSurfSpotFunctionality.mp4)
 
 [Clearing and deleting Surf Spots Functionality POE_Part3](images/POE_Part3_Functionality/clearSurfSpotsFunctionality.mp4)
 
-## Changelog for Part 2:
+## Changelog for Part 3:
+- 09a422d added POE part 3 demo screen shot and video headers to readme
+- db2f9b1 update addSurfSpot modal screenshot header
+- 9c5d903 added addSurfSpotPage screenshot descriptions to readme
+- 391e92e update readme formatting for demo videos
+- be7360e update functionality demo recording file path for readme
+- 840b8f7 update read me to format git logs
+- 6bd90d3 add git log for part 3
 - b405bd8 finalising CRUD functionality and adding demo vidoes for part 3
 - 6afef21 update for surf spot details carrying across to dashboard
 - defbbaf delete functionality upate
