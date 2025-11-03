@@ -103,7 +103,7 @@ please view this ReadMe on my GitHub repository over at: https://github.com/ben1
 [Clearing and deleting Surf Spots Functionality POE_Part3](images/POE_Part3_Functionality/clearSurfSpotsFunctionality.mp4)
 
 
-## Part 3 — SEO & Functionality Enhancements
+## SEO & Functionality Enhancements:
 
 ### Dashboard (`index.html`)
 
@@ -130,6 +130,9 @@ please view this ReadMe on my GitHub repository over at: https://github.com/ben1
 - I also applied semantic HTML structuring coupled with accessible form labels for screen readers.
 - Lastly, I ensured the page layout was also fully responsive to different screen sizes.
 
+
+## Email Form Functionality (about.html):
+[Demo showing contact email form functionality POE_Part3](images/POE_Part3_Functionality/emailContactForm.mp4)
 
 ## Changelog for Part 3:
 - 09a422d added POE part 3 demo screen shot and video headers to readme
