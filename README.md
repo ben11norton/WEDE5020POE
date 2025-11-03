@@ -82,4 +82,14 @@ a24c4ca Initial commit
 
 ![Clearing and deleting Surf Spots Functionality POE_Part3](images/POE_Part3/clearSurfSpotsFunctionality.mp4)
 
-## Changelog for Part 3:
+#b405bd8 finalising CRUD functionality and adding demo vidoes for part 3
+6afef21 update for surf spot details carrying across to dashboard
+defbbaf delete functionality upate
+83156f7 added remove all surf spots feature to clear all the surf spot details
+5b383a1 setting up add surf spot prepopulating modal for edit
+f2375d3 add edit and delete icons for add surf spots
+504a15f storing surf spot details with id so we can access them for editing and deleting
+59b8510 displaying added surf spot on dashboard
+0c3d1f5 added page tag div to let us keep track of which active page we are on when navigating to a new page in our js script
+c854633 storing new surf spots objects in a global array that we can then cache in local storage to display on the dashboard
+032260d set up for adding new surf spots on our addSurfSpot.html# Changelog for Part 3:
