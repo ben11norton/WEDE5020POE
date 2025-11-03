@@ -76,6 +76,19 @@ please view this ReadMe on my GitHub repository over at: https://github.com/ben1
 ## POE_Part3 - JavaScript Functionality:
 
 ### Create - Edit - Delete (CRUD) functionality:
+
+### Interactive Features:
+- Modal 
+- CRUD functionality and updating dashboard
+
+### Modal: Adding a new surf spot (addSurfSpot.html)
+- This modal allows users to add a new surf spot easily without having to leave the addSurfSpot.html page.
+- This increases ease of use for the user allowing seamless intractivity with the web page.
+#### Implementation of modal:
+- I used the boostrap.css library built in modal for the showing and hiding of the modal paried up with vanilla javascript by employing the use of document.querySelector() method and the .show() and .hide() methods to toggle the visibility of the modal
+#### HTML form inside of the modal:
+- Once the modal functionality was implemented I then added a html form which I assigned an id to 
+
 #### Add Surf Spot Page Functionality Description
 ![Add Surf Spot Page Functionality Description](images/POE_Part3_Functionality/AddSurfSpotPageDescription.png)
 

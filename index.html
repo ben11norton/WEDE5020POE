@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEDE5020POE</title>
+
+    <!--Adding our main dashboard screen title to increase SEO -->
+    <title>Cape Town Surf Spot Hub | Dashboard</title>
+
+    <!-- adding our Meta Description for SEO-->
+    <meta name="description" content="Track, add, and explore surf spots in Cape Town. Add your favorite surf spots, leave comments and ratings, and save your sessions.">
+
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <!-- using bootstrap cdn styling to neatly arrange our html -->
@@ -16,10 +22,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
 
-
     <!-- adding font awesome here for our icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <!-- adding robots SEO to tell search engine to index the page -->
+    <meta name="robots" content="index, follow">
 </head>
 <body>
 
@@ -61,34 +68,38 @@
 
                         <div class="row mt-2">
                             <div class="col-12">
+                                <!-- **SEO Quick Win: H1 Heading** -->
                                 <h1>Cape Town Surf Spot Hub</h1>
-                                <p>This website aims to centralise all the surf spots in cape town.</p>
+                                <p>This website aims to centralise all the surf spots in Cape Town.</p>
                             </div>
                         </div>
 
                         <div class="row mt-4">
                             <div class="col-12 pb-3 pb-lg-0 col-lg-4">
                                 <div class="glassmorphismCard" style="display: flex; flex-direction: column; align-items: center;">
-                                    <img src="images/dungeons.jpg" alt="Dungeons" class="dashboardImage">
+                                    <!--Added alt descriptions to the images to increase SEO-->
+                                    <img src="images/dungeons.jpg" alt="Dungeons Surf Spot Image" class="dashboardImage">
                                     <p style="margin-top: 5px;">Add your favorite surf spots</p>
                                 </div>
                             </div>
                             <div class="col-12 pb-3 pb-lg-0 col-lg-4">
                                 <div class="glassmorphismCard" style="display: flex; flex-direction: column; align-items: center;">
-                                    <img src="images/sunset.jpg" alt="Sunset" class="dashboardImage">
+                                    <!--Added alt descriptions to the images to increase SEO-->
+                                    <img src="images/sunset.jpg" alt="Sunset Surf Spot Image" class="dashboardImage">
                                     <p style="margin-top: 5px;">Leave a comment and a rating</p>
                                 </div>
                             </div>
                             <div class="col-12 pb-3 pb-lg-0 col-lg-4">
                                 <div class="glassmorphismCard" style="display: flex; flex-direction: column; align-items: center;">
-                                    <img src="images/muizenberg.jpg" alt="muizenberg" class="dashboardImage">
+                                    <!--Added alt descriptions to the images to increase SEO-->
+                                    <img src="images/muizenberg.jpg" alt="Muizenberg Surf Spot Image" class="dashboardImage">
                                     <p style="margin-top: 5px;">Save all your favorite sessions</p>
                                 </div>
                             </div>
                         </div>
 
-
                         <div class="row mt-4">
+                            <!-- SEO Header heirachy follwing on from h1 above = H3 Section Heading -->
                             <h3>Dashboard</h3>
                             <div class="col-12 col-lg-4 pb-3 pb-lg-0">
                                 <div id="surfSpot1" class="card p-3">
@@ -109,46 +120,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
         <!-- this is our hidden boiler plate surf sport card that will be added to the row above -->
         <div id="addSurfSpotCardDetailsHidden" style="display: none; flex-direction: column; cursor: pointer;">
-
-            <div class="row mb-2 align-items-center">
-                <div class="col-12">
-                    <div>Surf Spot Name:</div>
-                    <span class="spotNameCardDetails" style="color: #3fcc96;"></span>
-                </div>
-            </div>
-
-            <div class="row mb-2 align-items-center">
-                <div class="col-12">
-                    <div>Location:</div>
-                    <span class="spotLocationCardDetails"style="color: #3fcc96;"></span>
-                </div>
-            </div>
-
-            <div class="row mb-2 align-items-center">
-                <div class="col-12">
-                    <div>Wave Type:</div>
-                    <span class="waveTypeCardDetails"style="color: #3fcc96;"></span>
-                </div>
-            </div>
-
-            <div class="row mb-2 align-items-center">
-                <div class="col-12">
-                    <div>Difficulty Level:</div>
-                    <span class="difficultyCardDetails"style="color: #3fcc96;"></span>
-                </div>
-            </div>
-
-            <div class="row mb-2 align-items-center">
-                <div class="col-12">
-                    <div>Description:</div>
-                    <span class="descriptionCardDetails"style="color: #3fcc96;"></span>
-                </div>
-            </div>
         </div>
 
         <div class="bottomFooter">
