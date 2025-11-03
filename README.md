@@ -130,9 +130,17 @@ please view this ReadMe on my GitHub repository over at: https://github.com/ben1
 - I also applied semantic HTML structuring coupled with accessible form labels for screen readers.
 - Lastly, I ensured the page layout was also fully responsive to different screen sizes.
 
-
 ## Email Form Functionality (about.html):
 [Demo showing contact email form functionality POE_Part3](images/POE_Part3_Functionality/emailContactForm.mp4)
+
+###  Contact Form Web3Forms Integration
+- Here I used web3Forms for a lightweight contact form for my website (https://web3forms.com/);
+- This form allows users to send messages straight to my email without having to do any from of backend configuration.
+
+#### **Implementation Overview**
+- I implemented a html form with an endpoint url which employs the Web3Forms API at `https://api.web3forms.com/submit`.
+- The form also uses HTML email and text area validation to make sure all of the required fields are completed by the user before they submit the form.
+- In terms of styling, I employed bootstrap.css rows and cols techique and my custom `glassmorphismCard` class for styling consistency.
 
 ## Changelog for Part 3:
 - 09a422d added POE part 3 demo screen shot and video headers to readme
