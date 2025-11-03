@@ -46,50 +46,51 @@ please view this ReadMe on my GitHub repository over at: https://github.com/ben1
 - Alongside this, I also emplyed Googl Fonts font family Popoins to make the overall look and feel of the website more polished
 
 ## Changelog for Part 2:
-67a3f63 added demo video showcasing screen resposiveness and styling of pages to be viewed on git hub
-355d318 finalising set up for different screens
-bcc7873 update readme for font awesome icons and google fonts + demo video link
-f402887 readme headings
-3eea256 update readme to explain use of boostrap.css
-4251fc9 update readme for poe part 2 styling and screen resposiveness
-8e84724 new styled sidebar navigation and transferring other page styling across
-54c1627 styling sidebar and adding in font awesome for side bar
-c7aeb70 add styling and bottom footer class for footer
-11300f8 add font family Poppins to our dashboard
-be31646 adding Poppins google font and applying it to our side bar text content class
-e9207f1 adding color theme to dashboard
-1353f46 adding dashboard styling using boostrap columns for different screen resposiveness
-0a97ae8 setting up styling using inline for dashboard
-1f22664 adding glassmorphism styling for our cards to put on our dashboard
-8663f95 Create README.md
-b404ef8 Added progress screen shot of home page
-785dc94 Added navigation to all my different pages through the sidebar
-25b8a1b Added surf photos to home page
-b5bf96a Added our other html pages that are linked up for our sidebar to now work
-9c5ffd1 added my sidebar so we can now get ready to move to our other pages
-545171c setting up home screen structure
-2e35726 setting up base html boilter plate for main html page
-a24c4ca Initial commit
+- 67a3f63 added demo video showcasing screen resposiveness and styling of pages to be viewed on git hub
+- 355d318 finalising set up for different screens
+- bcc7873 update readme for font awesome icons and google fonts + demo video link
+- f402887 readme headings
+- 3eea256 update readme to explain use of boostrap.css
+- 4251fc9 update readme for poe part 2 styling and screen resposiveness
+- 8e84724 new styled sidebar navigation and transferring other page styling across
+- 54c1627 styling sidebar and adding in font awesome for side bar
+- c7aeb70 add styling and bottom footer class for footer
+- 11300f8 add font family Poppins to our dashboard
+- be31646 adding Poppins google font and applying it to our side bar text content class
+- e9207f1 adding color theme to dashboard
+- 1353f46 adding dashboard styling using boostrap columns for different screen resposiveness
+- 0a97ae8 setting up styling using inline for dashboard
+- 1f22664 adding glassmorphism styling for our cards to put on our dashboard
+- 8663f95 Create README.md
+- b404ef8 Added progress screen shot of home page
+- 785dc94 Added navigation to all my different pages through the sidebar
+- 25b8a1b Added surf photos to home page
+- b5bf96a Added our other html pages that are linked up for our sidebar to now work
+- 9c5ffd1 added my sidebar so we can now get ready to move to our other pages
+- 545171c setting up home screen structure
+- 2e35726 setting up base html boilter plate for main html page
+- a24c4ca Initial commit
 
 
 
 ## POE_Part3 - JavaScript Functionality:
 
-### Create - Edit - Delete functionality 
+### Create - Edit - Delete functionality
 ![Adding Surf Spots to Dashboard POE_Part3](images/POE_Part3/AddSurfSpotsToDashboard.mp4)
 
 ![Editing Surf Spots Functionality POE_Part3](images/POE_Part3/editSurfSpotFunctionality.mp4)
 
 ![Clearing and deleting Surf Spots Functionality POE_Part3](images/POE_Part3/clearSurfSpotsFunctionality.mp4)
 
-#b405bd8 finalising CRUD functionality and adding demo vidoes for part 3
-6afef21 update for surf spot details carrying across to dashboard
-defbbaf delete functionality upate
-83156f7 added remove all surf spots feature to clear all the surf spot details
-5b383a1 setting up add surf spot prepopulating modal for edit
-f2375d3 add edit and delete icons for add surf spots
-504a15f storing surf spot details with id so we can access them for editing and deleting
-59b8510 displaying added surf spot on dashboard
-0c3d1f5 added page tag div to let us keep track of which active page we are on when navigating to a new page in our js script
-c854633 storing new surf spots objects in a global array that we can then cache in local storage to display on the dashboard
-032260d set up for adding new surf spots on our addSurfSpot.html# Changelog for Part 3:
+## Changelog for Part 2:
+- b405bd8 finalising CRUD functionality and adding demo vidoes for part 3
+- 6afef21 update for surf spot details carrying across to dashboard
+- defbbaf delete functionality upate
+- 83156f7 added remove all surf spots feature to clear all the surf spot details
+- 5b383a1 setting up add surf spot prepopulating modal for edit
+- f2375d3 add edit and delete icons for add surf spots
+- 504a15f storing surf spot details with id so we can access them for editing and deleting
+- 59b8510 displaying added surf spot on dashboard
+- 0c3d1f5 added page tag div to let us keep track of which active page we are on when navigating to a new page in our js script
+- c854633 storing new surf spots objects in a global array that we can then cache in local storage to display on the dashboard
+- 032260d set up for adding new surf spots on our addSurfSpot.html# Changelog for Part 3:
