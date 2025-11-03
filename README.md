@@ -86,21 +86,80 @@ please view this ReadMe on my GitHub repository over at: https://github.com/ben1
 - This increases ease of use for the user allowing seamless intractivity with the web page.
 #### Implementation of modal:
 - I used the boostrap.css library built in modal for the showing and hiding of the modal paried up with vanilla javascript by employing the use of document.querySelector() method and the .show() and .hide() methods to toggle the visibility of the modal
-#### HTML form inside of the modal:
-- Once the modal functionality was implemented I then added a html form which I assigned an id to 
 
 #### Add Surf Spot Page Functionality Description
-![Add Surf Spot Page Functionality Description](images/POE_Part3_Functionality/AddSurfSpotPageDescription.png)
+![Add Surf Spot Page Functionality Description Screen shot](images/POE_Part3_Functionality/AddSurfSpotPageDescription.png)
 
 #### Add Surf Spot modal
-![Add Surf Spot Modal](images/POE_Part3_Functionality/AddSurfSpotModal.png)
+![Add Surf Spot Modal Screenshot](images/POE_Part3_Functionality/AddSurfSpotModal.png)
 
-### CRUD Demo Video
+### CRUD Demo Video:
 [Adding Surf Spots to Dashboard POE_Part3](images/POE_Part3_Functionality/AddSurfSpotsToDashboard.mp4)
 
 [Editing Surf Spots Functionality POE_Part3](images/POE_Part3_Functionality/editSurfSpotFunctionality.mp4)
 
 [Clearing and deleting Surf Spots Functionality POE_Part3](images/POE_Part3_Functionality/clearSurfSpotsFunctionality.mp4)
+
+
+### My Functionality Logic Overview (`script.js`)
+
+The script.js I wrote handles all of the dynamic behavior for all the website pages, allowing for surf spot CRUD functionality alongside the use of local storage caching across the website.
+
+Detaied descriptions of the code can be found in the comments of this file.
+
+---
+
+### **Page Initialization**
+- Firstly I define my **global variables** for the surf spot cards as well as for my local storage cached details.
+- I then gave all of my html pages a div with a class of `.activePageTag` element which allowed me to **detect the current page** (`dashboardPage`, `addSurfSpotPage`, etc.).
+- Because I could then know which page I would be on I would call `triggerActivePageFunctions()` switch statment to run specific functions depending on the active page.
+- For example, on my dashboard and add surf spot pages, I then call `checkAndDisplaySurfSpots()` to render the stored surf spots information.
+
+---
+
+### **Local Storage Handling**
+- In terms of dispalying stored information, my `checkAndDisplaySurfSpots()` gets the locallyt  cached surf spot data (`surfSpotDetailsLocalStorageArray`) from `localStorage`.
+- I then parse this stored data in my local storage array and loop through the array to grab each surf spot so I can populate dashboard cards dynamically.  
+- The `showNewSurfSpotInfo()` function is also called for each stored surf spot object. This allows me to fill the corresponding card with the correct data.
+
+---
+
+### **Add Surf Spot Modal**
+- My `showAddSurfSpotModal()` function is used to display the Bootstrap modal when a surf spot card is clicked.  
+- Then when the details in the modal form are filled in, I call `addNewSurfSpot()` as an onclick function:
+  - all form data (inputs, selects, textareas) are then stored as key-value pairs.  
+  - this new surf spot data is then added to my global array allowing me to then add it to the ** `localStorage cache`**.
+  - once the details are saved in the cached I then call `showNewSurfSpotInfo()` to hide the modal and show the saved details.  
+
+---
+
+### **Populating Surf Spot Cards**
+- My `showNewSurfSpotInfo()` function:
+  - I use a hidden surf spot card template to then clone (`<div class=".addSurfSpotCardDetailsHidden"`).  
+  - once I have this cloned, I loop through its `span` elements and **match the values by class name** (e.g., `locationCardDetails`).  
+  - after I have the matched details, I then fill the template to the corresponding dashboard card and makes it visible.
+
+---
+
+### **Editing Surf Spots**
+- My `editSurfSpot()` opens the boostrap modal with pre-filled details for that specific selected surf spot card.  
+- I then grab corresponding surf spot data by matching its card id to the globally stored array index.  
+- Once I have the matching details I pass this into `populateEditSurfSpotModal()`, which loops through the modal form fields and sets their values from the matching details object.
+
+---
+
+### **Deleting Surf Spots**
+- `deleteSurfSpot()`:
+  - resets the surf spot card to its default 
+  - it also removes the surf spot entry from `localStorage` by matching its ID.  
+  - lastly it updates the storage and reloads the page to reflect changes.
+
+---
+
+### **Clearing All Surf Spots**
+- `clearAllSurfSpots()` removes all surf spot data from `localStorage` cache before then refreshing the page.
+
+---
 
 
 ## SEO & Functionality Enhancements:
